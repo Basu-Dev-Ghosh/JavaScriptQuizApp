@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Javascript Quiz Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="start-game" id="start-page">
+            <h1>Quiz on 'C' programming</h1>
+            <button onclick="StartQuiz(0)">Start</button>
+        </div>
+        <div class="question-container" id="question-page">
+            <h1 id="question"></h1>
+            <div class="option">
+                <input type="radio" name="option" id="ans1" class="opt">
+                <label for="ans1" id="option1"></label><br>
+                <input type="radio" name="option" id="ans2" class="opt">
+                <label for="ans1" id="option2"></label><br>
+                <input type="radio" name="option" id="ans3" class="opt">
+                <label for="ans1" id="option3"></label><br>
+                <input type="radio" name="option" id="ans4" class="opt">
+                <label for="ans1" id="option4"></label>
+            </div>
+            <button onclick="loadQuestion()">Submit</button>
+        </div>
+        <div class="result-container" id="result-page">
+            <p id="scr"></p>
+            <button onclick="load()">Try Again</button>
+        </div>
+    </div>
+</body>
+<script src="./Script/index.js"></script>
+
+</html>
